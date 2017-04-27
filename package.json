@@ -1,0 +1,36 @@
+{
+  "name": "shortlisted",
+  "version": "1.0.0",
+  "description": "Node server project",
+  "repository": "https://github.com/GoogleCloudPlatform/nodejs-getting-started",
+  "private": true,
+  "scripts": {
+    "start": "node ${SCRIPT:-app.js}",
+    "monitor": "nodemon ${SCRIPT:-app.js}",
+    "deploy": "gcloud preview app deploy app.yaml worker.yaml",
+    "mocha": "mocha test/index.js -t 30000",
+    "lint": "semistandard \"**/*.js\"",
+    "test": "npm run lint && npm run mocha",
+    "init-cloudsql": "node books/model-cloudsql.js"
+  },
+  "author": "Gabriel Anglada",
+  "contributors": [],
+  "license": "Apache Version 2.0",
+  "semistandard": {
+    "globals": [
+      "after",
+      "afterEach",
+      "before",
+      "beforeEach",
+      "describe",
+      "it"
+    ]
+  },
+  "dependencies": {
+    "restify": "4.3.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.12.7"
+  }
+}
