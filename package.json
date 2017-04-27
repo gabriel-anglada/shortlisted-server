@@ -1,6 +1,6 @@
 {
   "name": "shortlisted",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Node server project",
   "repository": "https://github.com/GoogleCloudPlatform/nodejs-getting-started",
   "private": true,
